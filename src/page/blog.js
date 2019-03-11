@@ -3,11 +3,11 @@ import "./../css/bootstrap.min.css";
 import "./../css/main.css";
 
 import TopArticle from './../component/top-article.js'
-import KontenBlog1 from './kontenBlog1.js'
-import KontenBlog2 from './kontenBlog2.js'
-import KontenBlog3 from './kontenBlog3.js'
-import KontenBlog4 from './kontenBlog4.js'
-import KontenBlog5 from './kontenBlog5.js'
+import KontenBlog1 from '../component/kontenBlog1.js'
+import KontenBlog2 from '../component/kontenBlog2.js'
+import KontenBlog3 from '../component/kontenBlog3.js'
+import KontenBlog4 from '../component/kontenBlog4.js'
+import KontenBlog5 from '../component/kontenBlog5.js'
 
 import search from "./../ico/search.png"
 
