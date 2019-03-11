@@ -38,17 +38,17 @@ class App extends Component {
         <Footer /> */}
 
         {/* Gallery */}
-        {/* <Header />
+        <Header />
         <Gallery />
-        <Footer /> */}
+        <Footer />
 
         {/* Contact */}
         {/* <Contact /> */}
 
         {/* Blog */}
-        <HeaderBlog />
+        {/* <HeaderBlog />
         <Blog/>
-        <Footer />
+        <Footer /> */}
 
       </div>
     );
