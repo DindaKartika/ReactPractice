@@ -7,23 +7,25 @@ import foto1 from "./../img/arkais.jpg";
 
 const ListNews = props => {
     return(
-        <div>
+        <div className="isiblogs">
+          <a href={props.url}>
             <div className="isiBlog">
-            <div className="row">
-              <div className="col-md-10">
-                <h3>{props.title}</h3>
+              <div className="row">
+                <div className="col-md-10">
+                  <h3>{props.title}</h3>
+                </div>
+                <div className="col-md-2 d-md-block d-none">
+                  <span>{props.date}</span>
+                </div>
               </div>
-              <div className="col-md-2 d-md-block d-none">
-                <span>{props.date}</span>
+              <div className="row">
+                <div className="col-md-4 col-6">
+                  <img src={props.img} />
+                </div>
+                <div className="col-md-8 col-6">{props.content}</div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-4 col-6">
-                <img src={props.img} />
-              </div>
-              <div className="col-md-8 col-6">{props.content}</div>
-            </div>
-          </div>
+          </a>
       </div>
     )
 }

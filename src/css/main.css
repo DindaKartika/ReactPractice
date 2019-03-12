@@ -484,6 +484,14 @@ form label{
     font-size: 14px;
 }
 
+.isiblogs a{
+    color: black;
+}
+
+.isiblogs a :hover{
+    color: black;
+}
+
 /* Ini Style Footer */
 
 footer{
