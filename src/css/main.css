@@ -451,6 +451,11 @@ form label{
     color: #19345E;
 }
 
+.isi-top-article{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
 .topArticle{
     padding: 10px 5%;
     margin: 5px 8px;
@@ -463,7 +468,7 @@ form label{
     margin-left: 10px;
     margin-bottom: 50px;
     position: sticky;
-    top: 80px;
+    top: 30px;
 }
 
 .isiBlog{
@@ -472,7 +477,7 @@ form label{
 }
 
 .isiBlog img{
-    height: 250px;
+    height: 150px;
 }
 
 .isiBlog span{
