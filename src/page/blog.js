@@ -88,11 +88,6 @@ class Blog extends Component {
               <div className="col-md-3">
                   <div className="sidebar">
                       <Search doSearch= {e => this.handleInputChange(e)}/>
-                      {/* {listNews.map((item, key) => {
-                        const src_img = item.urlToImage === null ? az : item.urlToImage;
-                        const content = item.urlToImage !== null ? item.content: "";
-                        return <ListNews key ={key} url={item.url} title={item.title} img={src_img} date={item.date} content={content}/>;
-                      })} */}
                       <TopArticle/>
                   </div>
               </div>

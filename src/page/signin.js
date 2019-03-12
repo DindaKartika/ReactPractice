@@ -19,7 +19,7 @@ class SignIn extends Component {
         };
         const self = this;
         axios
-            .post('https://atareact.free.beeceptor.com/auth', data)
+            .post('https://maealterra.free.beeceptor.com/login', data)
             .then(function(response){
                 console.log(response.data);
                 if (response.data.hasOwnProperty("api_key")){
