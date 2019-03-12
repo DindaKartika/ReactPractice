@@ -32,7 +32,11 @@ header{
     padding: 0 1rem;
 }
 
-.bawah .nav-item{
+/* .nav-bawah{
+    display: none;
+} */
+
+.nav-bawah .nav-item{
     font-family: 'Muli', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -486,7 +490,7 @@ form label{
 }
 
 .isiBlog img{
-    height: 150px;
+    width: 270px;
 }
 
 .isiBlog span{
@@ -499,6 +503,10 @@ form label{
 
 .isiblogs a :hover{
     color: black;
+}
+
+.topsection{
+    text-align: center;
 }
 
 /* Styling Sign In */

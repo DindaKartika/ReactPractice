@@ -28,44 +28,49 @@ const Header = props => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/signin" className="nav-link">
+                    <Link to="/signin" className="nav-link" id="signin">
                       SIGN IN
                     </Link>
                   </li>
                   <li className="nav-item">
+                    <Link to="/" onClick={() =>props.postSignOut()} className="nav-link" id="signout">
+                      SIGN OUT
+                    </Link>
+                  </li>
+                  {/* <li className="nav-item">
                     <Link to="/signup" className="nav-link">
                       SIGN UP
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
             <div className="row">
               <div className="col-lg-12">
-                <ul className="nav bawah">
+                <ul className="nav nav-bawah" id="nav-bawah">
                   <li clas="nav-item">
-                    <Link to="/business" className="nav-link">
-                      BUSINESS
+                    <Link to='/source/abc-news' className="nav-link">
+                      ABC News
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/entertainment' className="nav-link">
-                      ENTERTAINMENT
+                    <Link to='/source/bbc-news' className="nav-link">
+                      BBC News
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/health' className="nav-link">
-                      HEALTH
+                    <Link to='/source/ars-technica' className="nav-link">
+                      Ars Technica
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/sport' className="nav-link">
-                      SPORT
+                    <Link to='/source/buzzfeed' className="nav-link">
+                      Buzzfeed
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to='/technology' className="nav-link">
-                      TECHNOLOGY
+                    <Link to='/source/cbc-news' className="nav-link">
+                      CBC News
                     </Link>
                   </li>
                 </ul>

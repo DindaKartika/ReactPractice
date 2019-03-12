@@ -4,15 +4,15 @@ import axios from 'axios';
 import "./../css/bootstrap.min.css";
 import "./../css/main.css";
 
-import TopArticle from './../component/top-article-new.js'
-import ListNews from './../component/kontenBlog.js'
+import TopArticle from '../component/top-article-new.js'
+import ListNews from '../component/kontenBlog.js'
 
 import search_img from "./../ico/search.png"
 
 import foto from './../img/side-view.jpg'
 
 const az = {foto}
-const urlNews = 'https://newsapi.org/v2/everything?q=bisnis&language=id&apiKey=2a387c9cad674d258d97be8d34e65189';
+const urlNews = 'https://newsapi.org/v2/everything?apiKey=2a387c9cad674d258d97be8d34e65189&sources=ars-technica';
 
 class Blog extends Component {
   constructor(props){

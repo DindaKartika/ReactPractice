@@ -12,7 +12,7 @@ import search_img from "./../ico/search.png"
 import foto from './../img/side-view.jpg'
 
 const az = {foto}
-const urlNews = 'https://newsapi.org/v2/everything?q=teknologi&language=id&apiKey=2a387c9cad674d258d97be8d34e65189';
+const urlNews = 'https://newsapi.org/v2/everything?apiKey=2a387c9cad674d258d97be8d34e65189&sources=cbc-news';
 
 class Blog extends Component {
   constructor(props){
