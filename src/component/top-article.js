@@ -7,19 +7,20 @@ import foto1 from "./../img/arkais.jpg";
 
 const TopArticle = props => {
     return(
-        <div className="row">
-            <div className="col-md-3 d-md-block d-none">
-                <h3 className="number"></h3>
-            </div>
-            <div className="col-md-9">
+        <div className="row isiblogs">
+            <a href={props.url}>
                 <h5 class="isi-top-article">{props.title}</h5>
-            </div>
+            </a>
         </div>
     )
 }
 
 TopArticle.propTypes = {
-    title : PropTypes.string.isRequired
+    title : PropTypes.string.isRequired,
+    date : PropTypes.string,
+    content : PropTypes.string.isRequired,
+    img : PropTypes.string,
+    url : PropTypes.string
 }
 
 

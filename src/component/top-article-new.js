@@ -41,7 +41,7 @@ class TopArticle extends Component {
           <div className="topArticle">
                 <h3 className="titleTopArticle">Top Article</h3>
                   {listTopNews.map((item, key)=>{
-                      return <TopArticles key = {key} title = {item.title}/>;
+                      return <TopArticles key = {key} title = {item.title} url={item.url}/>;
                   })}
           </div>
         </section>

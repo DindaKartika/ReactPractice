@@ -34,7 +34,8 @@ ListNews.propTypes = {
     title : PropTypes.string.isRequired,
     date : PropTypes.string,
     content : PropTypes.string.isRequired,
-    img : PropTypes.string
+    img : PropTypes.string,
+    url : PropTypes.string
 }
 
 export default ListNews
