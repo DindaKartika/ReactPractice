@@ -5,8 +5,8 @@ import "./App.css"
 
 import Header from './component/header.js'
 import Footer from './component/footer.js'
-import HomeAtas from './page/homeAtas.js'
-import HomeBawah from './page/homeBawah.js'
+import HomeAtas from './component/homeAtas.js/index.js'
+import HomeBawah from './component/homeBawah.js'
 import Gallery from './page/gallery.js'
 import Contact from './page/contact.js'
 import HeaderBlog from './component/header-blog.js'

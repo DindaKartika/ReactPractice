@@ -9,10 +9,6 @@ header{
     /* height: 95px; */
 }
 
-.HeaderBlog{
-    height: 95px;
-}
-
 
 .logo-head{
     width:133px;
@@ -25,12 +21,24 @@ header{
     margin:42px 100px 33px auto;
 }
 
+
+
 .nav-link{
     font-family: 'Muli', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #19345E;
     margin: 0 5px;
+    padding: 0 1rem;
+}
+
+.bawah .nav-item{
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #19345E;
+    margin: 0 2rem;
+    padding: 0 1rem;
 }
 
 .active{
@@ -493,6 +501,43 @@ form label{
     color: black;
 }
 
+/* Styling Sign In */
+
+.signin{
+    margin : 50px 10%;
+    padding : 50px 20%;
+    border : 1px solid darkblue;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.signin input{
+    width: 100%;
+    margin: 5px;
+}
+
+.signin button{
+    margin: 10px
+}
+
+/* Styling Not Match */
+.notfound{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 50px 0;
+}
+
+/* Styling Profile */
+
+.content{
+    margin : 50px 10%;
+    padding : 50px 20%;
+    border : 1px solid darkblue;
+    border-radius: 25px;
+    text-align: center;
+}
+
 /* Ini Style Footer */
 
 footer{
@@ -545,7 +590,7 @@ footer{
     text-align: left !important;
 }
 
-.content-sos a{
+.content-sos Link{
     color: #F7F7F7;
     text-decoration: none;
     text-align: left !important;

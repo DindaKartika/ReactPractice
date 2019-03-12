@@ -6,7 +6,7 @@ import "./../css/main.css";
 import foto from './../img/side-view.jpg'
 import TopArticles from "./top-article.js";
 
-const urlTopNews = 'https://newsapi.org/v2/top-headlines?country=id&category=health&pageSize=5&apiKey=2a387c9cad674d258d97be8d34e65189';
+const urlTopNews = 'https://newsapi.org/v2/top-headlines?country=id&pageSize=5&apiKey=2a387c9cad674d258d97be8d34e65189';
 
 class TopArticle extends Component {
     constructor(props){

@@ -6,17 +6,13 @@ import "./../css/main.css";
 
 import TopArticle from './../component/top-article-new.js'
 import ListNews from './../component/kontenBlog.js'
-import Search from './../component/search.js'
 
 import search_img from "./../ico/search.png"
 
 import foto from './../img/side-view.jpg'
 
 const az = {foto}
-const urlNews = 'https://newsapi.org/v2/everything?q=berita&apiKey=2a387c9cad674d258d97be8d34e65189';
-
-const baseUrl = 'https://newsapi.org/v2/'
-const key = '2a387c9cad674d258d97be8d34e65189'
+const urlNews = 'https://newsapi.org/v2/everything?q=entertainment&language=id&apiKey=2a387c9cad674d258d97be8d34e65189';
 
 class Blog extends Component {
   constructor(props){
@@ -41,35 +37,6 @@ class Blog extends Component {
       })
   }
 
-  handleInputChange = e =>{
-    console.log('event', e.target.value);
-    let value = e.target.value;
-
-    this.setState({
-      search:value
-    },
-    ()=>{
-      this.searchNews(value);
-    })
-  }
-
-  searchNews = async keyword =>{
-    console.log('searchNews', keyword);
-    const self = this;
-    if(keyword.length > 2){
-      try{
-        const response = await axios.get(
-          baseUrl + "everything?q=" + keyword + "&languange=id&apiKey=" + key
-        )
-        console.log(response);
-        self.setState({listNews: response.data})
-      }
-      catch(error){
-        console.error(error);
-      }
-    }
-  }
-
   render() {
 
     const {listNews, username, isiLogin} = this.state;
@@ -79,7 +46,10 @@ class Blog extends Component {
           <div className="row">
             <div className="col-md-3">
                 <div className="sidebar">
-                    <Search/>
+                    <form href="./search.html" className="searchForm">
+                        <button type="submit" className="searchButton"><img src={search_img}/></button>
+                        <input type="text" className="search"/>
+                    </form>
                     <TopArticle/>
                 </div>
             </div>
