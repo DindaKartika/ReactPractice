@@ -21,9 +21,10 @@ const az = {foto}
 const baseUrl = 'https://newsapi.org/v2/'
 const key = '2a387c9cad674d258d97be8d34e65189'
 
-const sourcePath = window.location.pathname.slice(9)
+// const sourcePath = this.match.params.Sources
 
-const urlNews = baseUrl + "everything?sources=" + sourcePath + "&language=en&apiKey=" + key
+// const urlNews = baseUrl + "everything?sources=" + sourcePath + "&language=en&apiKey=" + key
+// const urlNews = 'https://newsapi.org/v2/everything?apiKey=2a387c9cad674d258d97be8d34e65189&sources=abc-news&language=en'
 
 class Blog extends Component {
   constructor(props){
@@ -37,6 +38,8 @@ class Blog extends Component {
 
   componentDidMount = () =>{
     const self = this;
+    const sourcePath = this.props.match.params.Sourcers;
+    const urlNews = baseUrl + "everything?sources=" + sourcePath + "&language=en&apiKey=" + key;
     axios
       .get(urlNews)
       .then(function(response){
@@ -87,6 +90,7 @@ class Blog extends Component {
   }
   else{
       return(
+        //   {match.params}
         <div className="blogs">
             <div className="row">
               <div className="col-md-3">
@@ -111,3 +115,5 @@ class Blog extends Component {
 }
 
 export default connect("api_key, email, password, full_name, username, is_login", actions)(withRouter(Blog))
+
+

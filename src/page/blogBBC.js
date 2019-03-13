@@ -47,8 +47,7 @@ class Blog extends Component {
             <div className="col-md-3">
                 <div className="sidebar">
                     <form href="./search.html" className="searchForm">
-                        <button type="submit" className="searchButton"><img src={search_img}/></button>
-                        <input type="text" className="search"/>
+                    <Search doSearch= {e => this.handleInputChange(e)}/>
                     </form>
                     <TopArticle/>
                 </div>

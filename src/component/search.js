@@ -9,7 +9,6 @@ class Search extends Component{
     render(){
         return(
             <section className="topsection">
-                <button type="submit" className="searchButton"><img src={search_img}/></button>
                 <input type="text" name="search" id="search" value={this.props.keyword} placeholder={this.props.placeholder} onChange={this.props.doSearch}/>
             </section>
         )

@@ -18,7 +18,7 @@ export const actions = store => ({
         return{[event.target.name]: event.target.value};
     },
     postLogout: state =>{
-        store.setState({is_login: false});
+        return {is_login: false};
         // console.log(is_login);
     },
     postLogin: async state =>{
@@ -34,7 +34,7 @@ export const actions = store => ({
                         full_name : response.data.full_name,
                         email: response.data.email
                     });
-                    console.log("store", store)
+                    // console.log(this.is_login)
                 }
             })
             .catch(error =>{
