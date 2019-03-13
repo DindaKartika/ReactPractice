@@ -17,10 +17,13 @@ import Search from './../component/search.js'
 import foto from './../img/side-view.jpg'
 
 const az = {foto}
-const urlNews = 'https://newsapi.org/v2/everything?q=news&language=en&apiKey=2a387c9cad674d258d97be8d34e65189';
 
 const baseUrl = 'https://newsapi.org/v2/'
 const key = '2a387c9cad674d258d97be8d34e65189'
+
+const sourcePath = window.location.pathname.slice(9)
+
+const urlNews = baseUrl + "everything?sources=" + sourcePath + "&language=en&apiKey=" + key
 
 class Blog extends Component {
   constructor(props){
@@ -37,6 +40,7 @@ class Blog extends Component {
     axios
       .get(urlNews)
       .then(function(response){
+        console.log(urlNews)
         self.setState({listNews: response.data.articles});
         console.log(response.data);
       })

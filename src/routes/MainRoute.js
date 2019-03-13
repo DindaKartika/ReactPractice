@@ -15,6 +15,9 @@ import BBC from '../page/blogBBC.js'
 import ARS from '../page/blogARS.js'
 import ABC from './../page/blogABC.js'
 import CBC from './../page/blogCBC.js'
+import Sources from './../page/sources.js'
+import Loadable from 'react-loadable';
+import sources from './../page/sources.js';
 
 const MainRoute = () =>{
     return(
@@ -32,9 +35,23 @@ const MainRoute = () =>{
             <Route exact path="/source/ars-technica" component={ARS}/>
             <Route exact path="/source/abc-news" component={ABC}/>
             <Route exact path="/source/cbc-news" component={CBC}/>
+            {/* <Route path="/:sources" component={sources}/> */}
             <Route component={NotMatch}/>
         </Switch>
     )
 }
+
+// function Loading({ error }) {
+//     if (error) {
+//       return 'Oh nooess!';
+//     } else {
+//       return <h3>Loading...</h3>;
+//     }
+//   }
+
+// const AddUser = Loadable({
+//     loader: () => Sources,
+//     loading: Loading
+//   });
 
 export default MainRoute;
