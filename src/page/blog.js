@@ -87,7 +87,7 @@ class Blog extends Component {
             <div className="row">
               <div className="col-md-3">
                   <div className="sidebar">
-                      <Search doSearch= {e => this.handleInputChange(e)}/>
+                      <Search placeholder="Search..." doSearch= {e => this.handleInputChange(e)}/>
                       <TopArticle/>
                   </div>
               </div>

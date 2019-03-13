@@ -1,11 +1,17 @@
 import React, { Component } from "react";
 import axios from 'axios';
 
+import {connect} from 'unistore/react';
+import {actions} from './../store.js';
+import {withRouter} from 'react-router-dom';
+
+
 import "./../css/bootstrap.min.css";
 import "./../css/main.css";
 
 import TopArticle from './../component/top-article-new.js'
 import ListNews from './../component/kontenBlog.js'
+import Search from './../component/search.js'
 
 import search_img from "./../ico/search.png"
 
@@ -47,7 +53,7 @@ class Blog extends Component {
             <div className="col-md-3">
                 <div className="sidebar">
                     <form href="./search.html" className="searchForm">
-                    <Search doSearch= {e => this.handleInputChange(e)}/>
+                    <Search placeholder="Search..." doSearch= {e => this.handleInputChange(e)}/>
                     </form>
                     <TopArticle/>
                 </div>
@@ -65,4 +71,4 @@ class Blog extends Component {
   }
 }
 
-export default Blog;
+export default connect("api_key, email, password, full_name, username, is_login", actions)(withRouter(Blog))
